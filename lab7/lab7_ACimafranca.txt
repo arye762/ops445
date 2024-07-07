@@ -1,0 +1,101 @@
+test_0 (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for file creation: ./lab7a.py ... ok
+test_1 (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for file creation: ./lab7a1.py ... ok
+test_a (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for errors running: ./lab7a1.py ... ok
+test_a1 (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for correct shebang line: ./lab7a1.py ... ok
+test_a_instantiate_class_0 (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for Creating object - should fail with 4 arguments ... ok
+test_a_instantiate_class_1 (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for Creating object - should fail with string arguments ... ok
+test_b1_sum_times (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for sum_times() - should provide the correct output ... ok
+test_b2_sum_times (__main__.lab7a)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for sum_times() - should provide the correct output ... ok
+test_0 (__main__.lab7b)
+[Lab 7] - [Investigation 1] - [Part 2] - Test for file creation: ./lab7b.py ... ok
+test_a1 (__main__.lab7b)
+[Lab 7] - [Investigation 1] - [Part 2] - Test for correct shebang line: ./lab7b.py ... ok
+test_a_instantiate_class_0 (__main__.lab7b)
+[Lab 7] - [Investigation 1] - [Part 2] - Test for Creating object - should fail with 4 arguments ... ok
+test_a_instantiate_class_1 (__main__.lab7b)
+[Lab 7] - [Investigation 1] - [Part 2] - Test for Creating object - should fail with string arguments ... ok
+test_b1_change_time (__main__.lab7b)
+[Lab 7] - [Investigation 1] - [Part 2] - Test for change_time() with +1800 seconds ... ok
+test_b2_change_time (__main__.lab7b)
+[Lab 7] - [Investigation 1] - [Part 2] - Test for change_time() with -1800 seconds ... ok
+test_0 (__main__.lab7c)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for file creation: ./lab7c.py ... ok
+test_1 (__main__.lab7c)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for file creation: ./lab7c1.py ... ok
+test_a (__main__.lab7c)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for errors running: ./lab7c1.py ... ok
+test_a_instantiate_class_0 (__main__.lab7c)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for Creating object - should fail with 4 arguments ... ok
+test_a_instantiate_class_1 (__main__.lab7c)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for Creating object - should fail with string arguments ... ok
+test_b1_time_to_sec (__main__.lab7c)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for time_to_sec() function in ./lab7c.py ... ok
+test_b2_sec_to_time (__main__.lab7c)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for sec_to_time() function in .lab7c.py ... ok
+test_0 (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for file creation: ./lab7d.py ... ok
+test_a_instantiate_class_0 (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for Creating object in ./lab7d.py - should fail with 4 arguments ... ok
+test_a_instantiate_class_1 (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for Creating object in ./lab7d.py - should fail with string arguments ... ok
+test_b1_time_to_sec (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for time_to_sec() method in ./lab7d.py ... ok
+test_b2_format_time (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for format_time() method in ./lab7d.py ... ok
+test_b3_sum_times (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for sum_times() method in ./lab7d.py ... ok
+test_b4_change_time (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for change_time() method in ./lab7d.py ... ok
+test_b5_valid_time (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for invalid time using valid_time() method in ./lab7d.py ... ok
+test_b6_valid_time (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for valid time using valid_time() method in ./lab7d.py ... ok
+test_b7_sec_to_time (__main__.lab7d)
+[Lab 7] - [Investigation 2] - [Part 1] - Test for sec_to_time() function in ./lab7d.py ... ok
+test_0 (__main__.lab7e)
+[Lab 7] - [Investigation 2] - [Part 2] - Special object methods - Test for file creation: ./lab7e.py ... ok
+test_b1_import (__main__.lab7e)
+[Lab 7] - [Investigation 2] - [Part 2] - Test for importing ./lab7e.py ... ok
+test_b2_create_object (__main__.lab7e)
+[Lab 7] - [Investigation 2] - [Part 2] - Test for creating time object in ./lab7e.py ... ok
+test_b3_str (__main__.lab7e)
+[Lab 7] - [Investigation 2] - [Part 2] - Test for __str__ method in ./lab7e.py ... ok
+test_b4_repr (__main__.lab7e)
+[Lab 7] - [Investigation 2] - [Part 2] - Test for __repr__ method in ./lab7e.py ... ok
+test_0 (__main__.lab7f)
+[Lab 7] - [Investigation 2] - [Part 3] - Operator overloading - Test for file creation: ./lab7f.py ... ok
+test_b1_import (__main__.lab7f)
+[Lab 7] - [Investigation 2] - [Part 3] - Test for importing ./lab7f.py ... ok
+test_b2_create_object (__main__.lab7f)
+[Lab 7] - [Investigation 2] - [Part 3] - Test for creating time object in ./lab7f.py ... ok
+test_b3_operator_overloading (__main__.lab7f)
+[Lab 7] - [Investigation 2] - [Part 3] - Test for operator overloading for + in ./lab7f.py ... ok
+test_0 (__main__.lab7i)
+[Lab 7] - [Investigation 3] - [Part 3] - Local/Global Scope - Test for file creation: ./lab7i.py ... ok
+test_b1_run (__main__.lab7i)
+[Lab 7] - [Investigation 3] - [Part 3] - Global scope - Test for successful execution: ./lab7i.py ... ok
+test_b2_run (__main__.lab7i)
+[Lab 7] - [Investigation 3] - [Part 3] - Global scope - Test for correct output: ./lab7i.py ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 0.094s
+
+OK
+OPS445 Lab Report - System Information for running ./CheckLab7.py
+=================================================================
+    User login name: aika
+    Linux system name: AryeAikas-iMac.local
+    Python executable: /Library/Developer/CommandLineTools/usr/bin/python3
+    Python version: 396
+    OS Platform: darwin
+    Working Directory: /Users/aika/ops445/lab7
+    Start at: Sun Jul  7 14:09:12 2024
+=================================================================
