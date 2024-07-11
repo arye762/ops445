@@ -1,0 +1,6 @@
+Hello world
+This is a sample text file.
+It has several lines of text.
+It's like a poem,
+or something.
+Ok, have fun!
