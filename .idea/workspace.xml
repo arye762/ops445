@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdfe3ab4-faaa-4b0f-b007-ba8ab455b445" name="Changes" comment="added lab6">
+    <list default="true" id="bdfe3ab4-faaa-4b0f-b007-ba8ab455b445" name="Changes" comment="added lab 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +48,7 @@
     "Python.lab7c1.executor": "Run",
     "Python.lab7d.executor": "Run",
     "Python.lab7f.executor": "Run",
+    "Python.script.executor": "Run",
     "Python.student.executor": "Run",
     "Python.temp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -63,6 +64,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Quiz3" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +90,8 @@
       <workItem from="1720312412126" duration="2594000" />
       <workItem from="1720315626086" duration="1794000" />
       <workItem from="1720349907531" duration="16580000" />
+      <workItem from="1720392630001" duration="563000" />
+      <workItem from="1720709472048" duration="1050000" />
     </task>
     <task id="LOCAL-00001" summary="added lab5">
       <option name="closed" value="true" />
@@ -117,7 +125,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720355861092</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added lab6">
+      <option name="closed" value="true" />
+      <created>1720392675027</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720392675027</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added lab 7">
+      <option name="closed" value="true" />
+      <created>1720392701107</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720392701107</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,11 +162,13 @@
     <MESSAGE value="Lab 5 update" />
     <MESSAGE value="added lab5" />
     <MESSAGE value="added lab6" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lab6" />
+    <MESSAGE value="added lab 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lab 7" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ops445$lab7d.coverage" NAME="lab7d Coverage Results" MODIFIED="1720358555049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab7" />
     <SUITE FILE_PATH="coverage/ops445$student.coverage" NAME="student Coverage Results" MODIFIED="1720352263059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab6" />
+    <SUITE FILE_PATH="coverage/ops445$script.coverage" NAME="script Coverage Results" MODIFIED="1720709509437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ops445$lab7a1.coverage" NAME="lab7a1 Coverage Results" MODIFIED="1720357112386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab7" />
     <SUITE FILE_PATH="coverage/ops445$lab7c.coverage" NAME="lab7c Coverage Results" MODIFIED="1720358223908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab7" />
     <SUITE FILE_PATH="coverage/ops445$lab7f.coverage" NAME="lab7f Coverage Results" MODIFIED="1720374824714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab7" />
