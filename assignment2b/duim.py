@@ -35,21 +35,50 @@ def parse_command_args():
     # add argument for "target". set number of args to 1.
     args = parser.parse_args()
 
+def call_du_sub(target_directory):
+    """ Calls 'du' command on target directory with a depth of 1 and parses the output. """
+    cmd = ['du', '-d', '1', target_directory]
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, text=True)
+    output, errors = process.communicate()
+    return [line.strip() for line in output.split('\n') if line]
 
 def percent_to_graph(percent, total_chars):
     "returns a string: eg. '##  ' for 50 if total_chars == 4"
-    pass
+    if not 0 <= percent <= 100:
+        raise ValueError("Percentage must be between 0 and 100")
+    num_equals = int((percent / 100) * total_chars)
+    return '=' * num_equals + ' ' * (total_chars - num_equals)
 
-def call_du_sub(location):
-    "takes the target directory as an argument and returns a list of strings"
-    "returned by the command `du -d 1 location`"
-    pass
+def create_dir_dict(directory_list):
+    """ Creates a dictionary from a list with directory sizes. """
+    dir_dict = {}
+    for entry in directory_list:
+        parts = entry.split()
+        size = int(parts[0])
+        path = ' '.join(parts[1:])
+        dir_dict[path] = size
+    return dir_dict
 
-def create_dir_dict(alist):
-    "gets a list from call_du_sub, returns a dictionary which should have full"
-    "directory name as key, and the number of bytes in the directory as the value."
-    pass
+def parse_arguments():
+    """ Parses command-line arguments. """
+    parser = argparse.ArgumentParser(description='Enhanced du showing bar graphs of directory sizes.')
+    parser.add_argument('directory', type=str, help='Directory to analyze')
+    parser.add_argument('-H', '--human-readable', action='store_true', help='Display sizes in human-readable format')
+    return parser.parse_args()
 
+def main():
+    args = parse_arguments()
+    directory_list = call_du_sub(args.directory)
+    dir_dict = create_dir_dict(directory_list)
 
-if __name__ == "__main__":
-    pass
+    # Calculate total size and display each directory with its graph
+    total_size = sum(dir_dict.values())
+    print(f"Total: {total_size} bytes in {args.directory}")
+
+    for path, size in dir_dict.items():
+        percent = (size / total_size) * 100
+        graph = percent_to_graph(percent, 20)  # example fixed length of 20
+        print(f"{percent:.2f} % [{graph}] {size} bytes {path}")
+
+if __name__ == '__main__':
+    main()
