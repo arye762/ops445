@@ -37,17 +37,39 @@ def parse_command_args():
 
 def call_du_sub(target_directory):
     """ Calls 'du' command on target directory with a depth of 1 and parses the output. """
-    cmd = ['du', '-d', '1', target_directory]
-    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, text=True)
-    output, errors = process.communicate()
-    return [line.strip() for line in output.split('\n') if line]
+    command = ['du', '-d', '1', target_directory]
+
+    # Execute the command using subprocess.Popen
+    try:
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        output, errors = process.communicate()
+
+        if process.returncode != 0:
+            print("Error:", errors)
+            return []
+
+        # Split the output into lines and return the list
+        return output.strip().split('\n')
+
+    except Exception as e:
+        print(f"Failed to run command: {e}")
+        return []
 
 def percent_to_graph(percent, total_chars):
     "returns a string: eg. '##  ' for 50 if total_chars == 4"
     if not 0 <= percent <= 100:
-        raise ValueError("Percentage must be between 0 and 100")
-    num_equals = int((percent / 100) * total_chars)
-    return '=' * num_equals + ' ' * (total_chars - num_equals)
+        raise ValueError("Percent must be between 0 and 100")
+
+    # Calculate the number of symbols to represent the filled part of the graph
+    filled_length = round((percent / 100) * total_chars)
+
+    # Calculate the number of spaces for the unfilled part of the graph
+    empty_length = total_chars - filled_length
+
+    # Create the bar graph string
+    bar_graph = '=' * filled_length + ' ' * empty_length
+
+    return bar_graph
 
 def create_dir_dict(directory_list):
     """ Creates a dictionary from a list with directory sizes. """
