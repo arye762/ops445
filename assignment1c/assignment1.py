@@ -113,10 +113,23 @@ def valid_date(date: str) -> bool:
     "check validity of date"
     try:
         day, month, year = map(int, date.split('/'))
-        if year < 1583 or month < 1 or month > 12:
+        print(f"Debug: Parsed date - Day: {day}, Month: {month}, Year: {year}")
+
+        if year < 1583:
+            print("Debug: Year is less than 1583.")
             return False
-        return 1 <= day <= mon_max(month, year)
-    except ValueError:
+        if month < 1 or month > 12:
+            print(f"Debug: Month {month} is outside 1-12 range.")
+            return False
+        if day < 1 or day > mon_max(month, year):
+            print(f"Debug: Day {day} is outside 1-{mon_max(month, year)} range for month {month}, year {year}.")
+            return False
+
+        print("Debug: Date is valid.")
+        return True
+
+    except ValueError as e:
+        print(f"Error parsing date: {e}")
         return False
 
 
