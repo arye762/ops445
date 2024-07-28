@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bdfe3ab4-faaa-4b0f-b007-ba8ab455b445" name="Changes" comment="added Assignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment1c/assignment1.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1c/assignment1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2b/duim.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2b/duim.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -43,36 +44,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in CheckA2.py.executor": "Run",
-    "Python tests.Python tests in checkA1.py.executor": "Run",
-    "Python.assignment1.executor": "Run",
-    "Python.duim.executor": "Run",
-    "Python.fabfile.executor": "Run",
-    "Python.lab5b.executor": "Run",
-    "Python.lab7a.executor": "Run",
-    "Python.lab7a1.executor": "Run",
-    "Python.lab7c.executor": "Run",
-    "Python.lab7c1.executor": "Run",
-    "Python.lab7d.executor": "Run",
-    "Python.lab7f.executor": "Run",
-    "Python.script.executor": "Run",
-    "Python.student.executor": "Run",
-    "Python.temp.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "terminal",
-    "settings.editor.splitter.proportion": "0.23343527",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in CheckA2.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in checkA1.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.assignment1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.duim.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fabfile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab5b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab7a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab7a1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab7c.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab7c1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab7d.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab7f.executor&quot;: &quot;Run&quot;,
+    &quot;Python.script.executor&quot;: &quot;Run&quot;,
+    &quot;Python.student.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.23343527&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Quiz3" />
