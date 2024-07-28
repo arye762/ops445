@@ -76,8 +76,38 @@ def call_du_sub(location):
 def create_dir_dict(alist):
     "gets a list from call_du_sub, returns a dictionary which should have full"
     "directory name as key, and the number of bytes in the directory as the value."
-    pass
+    dir_dict = {}
+    for item in alist:
+        parts = item.split()
+        size = int(parts[0])
+        path = ' '.join(parts[1:])  # Join back the rest of the path in case it contains spaces
+        dir_dict[path] = size
+    return dir_dict
 
+def parse_arguments():
+    parser = argparse.ArgumentParser(description="DU Improved -- See Disk Usage Report with bar charts")
+    parser.add_argument("-l", "--length", type=int, default=20,
+                        help="Specify the length of the graph. Default is 20.")
+    parser.add_argument("-H", "--human-readable", action='store_true',
+                        help="Print sizes in human readable format (e.g., 1K 23M 2G)")
+    parser.add_argument("target", type=str, nargs='?',
+                        help="The directory to scan.")
+
+    return parser.parse_args()
+
+def main():
+    args = parse_arguments()
+    directory_list = call_du_sub(args.target)  # Use args.target, not args.directory
+    dir_dict = create_dir_dict(directory_list)
+
+    # Calculate total size and display each directory with its graph
+    total_size = sum(dir_dict.values())
+    print(f"Total: {total_size} bytes in {args.target}")  # Use args.target
+
+    for path, size in dir_dict.items():
+        percent = (size / total_size) * 100
+        graph = percent_to_graph(percent, args.length)  # Use dynamic length from args
+        print(f"{percent:.2f} % [{graph}] {size} bytes {path}")
 
 if __name__ == "__main__":
-    pass
+    main()
