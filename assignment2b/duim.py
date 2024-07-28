@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import subprocess, sys
+import subprocess
 import os
 import argparse
-
+import sys
 
 
 '''
@@ -56,22 +56,17 @@ def call_du_sub(location):
     "takes the target directory as an argument and returns a list of strings"
     "returned by the command `du -d 1 location`"
     command = ['du', '-d', '1', location]
-
-    # Execute the command using subprocess.Popen
     try:
         process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         output, errors = process.communicate()
-
         if process.returncode != 0:
-            print("Error:", errors)
+            print(f"Error accessing {location}: {errors.strip()}")
             return []
-
-        # Split the output into lines and return the list
         return output.strip().split('\n')
-
     except Exception as e:
         print(f"Failed to run command: {e}")
         return []
+
 
 def create_dir_dict(alist):
     "gets a list from call_du_sub, returns a dictionary which should have full"
@@ -95,19 +90,37 @@ def parse_arguments():
 
     return parser.parse_args()
 
+
 def main():
     args = parse_arguments()
-    directory_list = call_du_sub(args.target)  # Use args.target, not args.directory
-    dir_dict = create_dir_dict(directory_list)
+    target_directory = args.target if args.target else os.getcwd()  # Use current directory if none specified
 
-    # Calculate total size and display each directory with its graph
-    total_size = sum(dir_dict.values())
-    print(f"Total: {total_size} bytes in {args.target}")  # Use args.target
+    try:
+        if not os.path.isdir(target_directory):
+            raise ValueError(f"Error: {target_directory} is not a valid directory")
 
+        directory_list = call_du_sub(target_directory)
+        dir_dict = create_dir_dict(directory_list)
+
+        total_size = sum(dir_dict.values())
+        print(f"Total: {total_size} bytes in {target_directory}")
+
+        for path, size in dir_dict.items():
+            percent = (size / total_size) * 100
+            graph = percent_to_graph(percent, args.length)  # Use dynamic length from args
+            print(f"{percent:.2f} % [{graph}] {size} bytes {path}")
+
+    except Exception as e:
+        print(f"Error: {str(e)}")
+
+def format_output(dir_dict, total_size, args):
     for path, size in dir_dict.items():
         percent = (size / total_size) * 100
-        graph = percent_to_graph(percent, args.length)  # Use dynamic length from args
-        print(f"{percent:.2f} % [{graph}] {size} bytes {path}")
+        graph = percent_to_graph(percent, args.length)
+        if args.human_readable:
+            size = human_readable(size)
+        print(f"{percent:6.2f}% [{graph}] {size:>7} {path}")
+
 
 if __name__ == "__main__":
-    main()
+ main()

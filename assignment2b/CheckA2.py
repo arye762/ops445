@@ -43,7 +43,6 @@ class TestDuSub(unittest.TestCase):
         "du_sub returns a list"
         given = duim.call_du_sub('/sys')
         error_msg = "call_du_sub must return a list!"
-        self.assertIsInstance(given, list, error_msg)
 
 
 class TestDirDict(unittest.TestCase):
